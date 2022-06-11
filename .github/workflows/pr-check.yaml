@@ -36,6 +36,7 @@ jobs:
           gem install danger-chikuwa
       - name: Build
         run: ./gradlew assembleDebug > build.log
+        continue-on-error: true
       - name: Run Danger
         run: danger
         env:
