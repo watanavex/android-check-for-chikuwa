@@ -21,7 +21,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         this.addOnContextAvailableListener { context ->
-            this.chikuwa()
+
         }
 
         setSupportActionBar(binding.toolbar)
