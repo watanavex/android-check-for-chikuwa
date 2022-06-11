@@ -38,6 +38,6 @@ jobs:
         run: ./gradlew assembleDebug 2>&1 | tee build.log
         continue-on-error: true
       - name: Run Danger
-        run: danger
+        run: danger --remove-previous-comments
         env:
           DANGER_GITHUB_API_TOKEN: ${{ secrets.GITHUB_TOKEN }}
